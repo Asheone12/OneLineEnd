@@ -5,23 +5,21 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.muen.onelineend.R;
 import com.muen.onelineend.adapter.Adapter_difficulty_detail;
-import com.muen.onelineend.databinding.LayoutDifficultyBinding;
+import com.muen.onelineend.databinding.LayoutDifficultyDetailBinding;
 import com.muen.onelineend.util.RoadValuesUtil;
 import com.muen.onelineend.util.ValueUtil;
 
 
-public class DifficultyDetailFragment extends BaseFragment<LayoutDifficultyBinding> {
+public class DifficultyDetailFragment extends BaseFragment<LayoutDifficultyDetailBinding> {
     @Override
     public int getLayoutId() {
-        return R.layout.layout_difficulty;
+        return R.layout.layout_difficulty_detail;
     }
 
     @Override
@@ -46,8 +44,8 @@ public class DifficultyDetailFragment extends BaseFragment<LayoutDifficultyBindi
     }
 
     @Override
-    LayoutDifficultyBinding onCreateViewBinding(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return LayoutDifficultyBinding.inflate(inflater, container, false);
+    LayoutDifficultyDetailBinding onCreateViewBinding(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return LayoutDifficultyDetailBinding.inflate(inflater, container, false);
     }
 
     @Override

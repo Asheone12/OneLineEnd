@@ -28,14 +28,14 @@ public class IndexFragment extends BaseFragment<LayoutIndexBinding> {
             if(getActivity() instanceof MainActivity){
                 ((MainActivity)getActivity()).startFragment(DifficultyFragment.class,0,null,null);
             }else {
-                showToast("跳转失败，请联系开发人员");
+                showToast("跳转失败");
             }
         });
         viewBinding.btRandom.setOnClickListener(v -> {
             if(getActivity() instanceof MainActivity){
                 ((MainActivity)getActivity()).startFragment(RandomRoadFragment.class,0,null,null);
             }else {
-                showToast("跳转失败，请联系开发人员");
+                showToast("跳转失败");
             }
         });
         viewBinding.btSetting.setOnClickListener(v-> ViewUtil.getSettingDialog(getPreferencesEditor()));
