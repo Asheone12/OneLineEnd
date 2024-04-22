@@ -118,7 +118,7 @@ public class Grid_Yibi extends GridView implements View.OnTouchListener {
 
     private void setWidth(){
         ViewGroup.LayoutParams params=getLayoutParams();
-        params.width=ValueUtil.DpToPx(60)*(road==null?0:road.getColumns());
+        params.width=ValueUtil.DpToPx(40)*(road==null?0:road.getColumns());
         setLayoutParams(params);
     }
 
