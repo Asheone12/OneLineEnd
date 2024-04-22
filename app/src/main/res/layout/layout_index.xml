@@ -6,8 +6,10 @@
     android:layout_width="match_parent">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="一笔画完"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
@@ -19,18 +21,18 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/title">
 
         <Button
             android:id="@+id/btPrimary"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@drawable/shape_ellipse_gray"
             android:text="普通模式"
             android:textColor="@color/colorWhite"
@@ -41,7 +43,7 @@
             android:id="@+id/btRandom"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@drawable/shape_ellipse_gray"
             android:text="随机模式"
             android:textColor="@color/colorWhite"
@@ -52,7 +54,7 @@
             android:id="@+id/btSetting"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@drawable/shape_ellipse_gray"
             android:text="设置"
             android:textColor="@color/colorWhite"
@@ -63,7 +65,7 @@
             android:id="@+id/btFinsh"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:background="@drawable/shape_ellipse_gray"
             android:text="退出"
             android:textColor="@color/colorWhite"
